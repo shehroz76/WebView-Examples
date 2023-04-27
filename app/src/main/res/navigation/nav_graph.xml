@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="testing.demo.app.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="testing.demo.app.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_customWebViewFragment"
+            app:destination="@id/customWebViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/customWebViewFragment"
+        android:name="testing.demo.app.ui.custom_webview.CustomWebViewFragment"
+        android:label="CustomWebViewFragment" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="testing.demo.app.ui.webview.WebViewFragment"
+        android:label="WebViewFragment" />
+</navigation>

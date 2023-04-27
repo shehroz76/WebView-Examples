@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Testing-WebViews</string>
+    <string name="please_enter_url">Please enter Url</string>
+    <string name="android_webview">Android WebView</string>
+    <string name="custom_webview">Custom WebView</string>
+    <string name="chrome_webview">Chrome WebView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
